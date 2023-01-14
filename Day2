@@ -1,0 +1,44 @@
+# TASK 1- BMI calculator✌
+
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+result1 = float(height)
+result2 = int(weight)
+bmi = (result2)/(result1**2)
+bmi_as_int = int(bmi)
+print(bmi_as_int)
+
+# TASK 2- lIFE IN WEEKS✌️
+age = input("What is your current age? ")
+
+int_age = int(age)
+years_left = 90-int_age
+days = 365
+weeks = 52
+months = 12
+days_1 = years_left*days
+weeks_1 = years_left*weeks
+months_1 = years_left*months
+
+print(f"You have {days_1} days, {weeks_1} weeks, and {months_1} months left.")
+
+# TASK 3- TIP CALCULATOR✌️
+
+print("Welcome to the tip calculator.")
+bill = float(input("What was the total bill $?"))
+percentage_tip = int( input("What percentage tip would you like to give? 10,12 or 15?"))
+people = int(input("How many people to split the bill?"))
+
+tip_added = (percentage_tip)/100       #converting the tip to percentage
+bill_with_tip = tip_added * bill       #multiplying the bill with the tip
+total_bill = bill + bill_with_tip
+sharing_bill = total_bill / people
+final_bill = round(sharing_bill,2)
+print(f"Each person should pay:{final_bill}")
+
+
+
+
+
+
